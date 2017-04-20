@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>五子棋</title>
+<style type="text/css">
+    body {
+        margin: 10px;
+    }
+</style>
+    <script src="js/canvas.js"></script>
+</head>
+<body onload="drawBoard()">
+<div style="width: 820px;">
+
+    <canvas width="640" id="canvas" onmousedown="play(event)" height="640">你的浏览器不支持HTML5 canvas，请使用 google chrome 浏览器 打开.
+    </canvas>
+    <div style="margin: 20px 20px;float: right;">
+        <button id="takeBack" onclick="takeBack()">悔棋</button>
+        <button id="cancel" onclick="cancel()" disabled>撤销悔棋</button>
+        <br/><br/>
+        <button id="reset" onclick="reset()">重新开始</button>
+    </div>
+</div>
+</body>
+</html>

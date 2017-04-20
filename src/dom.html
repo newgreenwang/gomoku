@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    #broad td {
+        border-right: 2px solid transparent;
+        border-top: 2px solid transparent;
+        height:40px;
+        width:40px;
+        text-align: center;
+        vertical-align: middle;
+        color:#fff;
+        font-family:"微软雅黑";
+        font-size:12px;
+
+    }
+
+</style>
+<script src="js/dom.js"></script>
+<body onload="drawBoard()">
+<div style="width: 820px;">
+    <img src="images/canvas.png" style="position:absolute;top: 26px;left: 26px;z-index: -1;">
+    <table id="broad"  cellpadding="0" cellspacing="0" onmousedown="play(event)" style="float:left"></table>
+    <div style="float: right; margin-top:20px;">
+        <button id="takeBack" onclick="takeBack()">悔棋</button>
+        <button id="cancel" onclick="cancel()" disabled>撤销悔棋</button>
+        <br/><br/>
+        <button id="reset" onclick="reset()">重新开始</button>
+    </div>
+</div>
+</body>
+</html>
